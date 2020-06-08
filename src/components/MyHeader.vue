@@ -22,8 +22,7 @@
 				<el-menu-item index="/my-source">my-source</el-menu-item>
 				<el-menu-item index="/my-groups">my-groups</el-menu-item>
 			</el-submenu>
-			<el-menu-item index="/drag-to-workplace">drag to workplace</el-menu-item>
-			<el-menu-item index="/demo-chart">demo-chart</el-menu-item>
+			<el-menu-item index="/example1">example1</el-menu-item>
 		</el-menu>
 	</div>
 </template>
@@ -47,3 +46,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.el-header, .el-main {
+  padding: 0;
+}
+</style>

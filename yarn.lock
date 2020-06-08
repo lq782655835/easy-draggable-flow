@@ -4173,6 +4173,11 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
+jsplumb@^2.13.2:
+  version "2.13.2"
+  resolved "https://registry.npmjs.org/jsplumb/-/jsplumb-2.13.2.tgz#77462f56cf66ee4ad3456da91b1c546925179145"
+  integrity sha512-Ad54lZusITD/7ENdt0Z3H7iyeyw0ov+dcPBRbMxezMxCnzzM27+dVKBlEZhhJ6EbrYY3DzPo7eFK5YBmR8NLzg==
+
 killable@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"

@@ -11,15 +11,9 @@ export default new Router({
       component: FlowPanel
     },
     // demos
-    // {
-    //   path: '/drag-to-workplace',
-    //   name: 'DragToWorkplace',
-    //   component: DragToWorkplace
-    // },
-    // {
-    //   path: '/demo-chart',
-    //   name: 'DemoChart',
-    //   component: DemoChart
-    // }
+    {
+      path: '/example1',
+      component: () => import('./views/Example1.vue')
+    },
   ]
 })
