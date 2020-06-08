@@ -19,27 +19,29 @@
 </template>
 
 <script>
-import { jsPlumb } from 'jsplumb'
+  import {jsPlumb} from 'jsplumb'
 
-export default {
-  methods: {
-    mounted() {
+  export default {
+    name: 'landing-page',
+    mounted () {
       let instance = jsPlumb.getInstance()
-      instance.ready(() => {
+      instance.ready( () => {
         instance.connect({
+          // source: 源对象，可以是对象的 id 属性、Element 对象或者 Endpoint 对象。
           source: 'item-1',
+          // target: 目标对象，可以是对象的 id 属性、Element 对象或者 Endpoint 对象。
           target: 'item-2',
           anchor: ['Left', 'Right', 'Top', 'Bottom', [0.3, 0, 0, -1], [0.7, 0, 0, -1], [0.3, 1, 0, 1], [0.7, 1, 0, 1]],
-          connector: ['StateMachine'],
-          endpoint: 'Blank',
+          connector: ['Bezier'],
+          endpoint: 'Dot',
           overlays: [ ['Arrow', { width: 8, length: 8, location: 1 }] ], // overlay
           // 添加样式
           paintStyle: { stroke: '#909399', strokeWidth: 2 }, // connector
+          endpointStyle: { fill: 'red', outlineStroke: '#606266', outlineWidth: 1 } // endpoint
         })
       })
     }
   }
-}
 </script>
 
 <style scoped>
