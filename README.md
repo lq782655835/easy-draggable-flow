@@ -116,19 +116,3 @@
 * 鼠标移动到画布中节点上，节点的右上角上显示【修改】、【删除】操作链接
 * 将鼠标从画布节点的左上角图标上拖动时可以拖拽出连线，然后将鼠标移动到其他节点上即可连接
 * 点击画布中节点之间的连线，可以进行连线删除
-
-## 启动
-
-``` bash
-# 下载工程
-git clone  https://github.com/BiaoChengLiu/easy-flow.git
-
-# 安装依赖包
-npm install
-
-# 启动
-npm run dev
-
-# 访问地址
- http://localhost:8080
-```
